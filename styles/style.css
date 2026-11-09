@@ -1,1 +1,110 @@
-/* место для вашего кода */
+body {
+    width: 1100px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
+    padding: 92px 50px 96px;
+}
+
+.header-link-list {
+    display: flex;
+    list-style: circle;
+    gap: 33px;
+}
+.logo {
+    display: block;
+    justify-self: center;
+}
+.logo-image {
+    display: block;
+    width: 148px;
+    height: 105px;
+}
+.address {
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    
+}
+.header-address {
+    justify-self: end;
+    width: 240px;
+    height: 98px;
+}
+.address-link {
+    font-style: normal;
+    line-height: 24px;
+    
+}
+.cover {
+    background-image: url("../images/cover.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 1100px;
+    height: 757px;
+    box-sizing: border-box;
+    padding: 0;
+    display: grid;
+}
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0,0,0, 0.6);
+    z-index: 1;
+}
+.cover-title {
+    padding: 165px 50px 207px;
+    z-index: 1;
+    color: white;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 100px;
+    letter-spacing: 30%;
+    line-height: 1.15;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.title-text{
+    display: block;
+}
+.title-left {
+    text-align: left;
+}
+.title-middle {
+    text-align: center;
+}
+.title-right {
+    text-align: right;
+}
+.description {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+.text-description {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+    word-spacing: 20px;
+}
+.button {
+    padding: 12px 32px;
+    border: 1px solid #fff;
+    color: white;
+    font-size: 22px;
+    text-transform: uppercase;
+    background: transparent;
+
+}
